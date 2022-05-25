@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="texto">Teste texto para java Script</label> <br>
+    <input type="text" id="texto" placeholder="texto"> <input type="text" id="num" placeholder="numero"> <br>
+    <button id="btn">APARECE EM BAIXO</button> <br>
+
+    <div id="txt"></div>
+    <div id="txt1"></div>
+
+    <script>
+
+        var btn = document.getElementById('btn');
+        var divis = document.getElementById('txt');
+
+        btn.onclick = function teste(){
+            
+            var num = document.getElementById('num').value;
+            var texto = document.getElementById('texto').value;
+            var tudo = [num, texto]
+            document.getElementById('txt').innerHTML = tudo;
+            
+        }
+
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>
